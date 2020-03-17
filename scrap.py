@@ -30,6 +30,7 @@ class Coronavirus():
 
         print(total_cases,new_cases,total_deaths,total_cases_now,new_cases_now,total_deaths_now)
         self.driver.close
+        
         time.sleep(300)
 def send_mail(country_element, total_cases, new_cases, total_deaths):
     server = smtplib.SMTP('smtp.mailgun.org', 587)
