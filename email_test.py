@@ -1,7 +1,7 @@
 import smtplib
-
+import time
 i=0
-while(i<5)
+while(i<5):
     server = smtplib.SMTP('smtp.mailgun.org', 587)
     server.ehlo()
     server.starttls()
